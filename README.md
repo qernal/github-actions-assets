@@ -26,7 +26,7 @@ jobs:
 
 | Parameter | Description | Default | Required | Values |
 | ---- | ---- | ---- | ---- | ---- |
-| `tag` | Tag to use, can be initial tag if `tag_pattern` is set | _no default_ | Y | String |
+| `tag` | Release tag to retrieve | _no default_ | Y | String |
 | `repo_name` | Name of the repository to create release on | _no default_ | Y | String |
 | `extract` | Automatically extract archives on download | false | N | Boolean |
 | `output_dir` | Name of the repository to create release on | _no default_ | Y | String |
@@ -37,7 +37,7 @@ Example;
 ```yaml
     steps:
       - uses: actions/checkout@v2
-      - uses: qernal/github-actions-rust-release@v1.0.8
+      - uses: qernal/github-actions-rust-assets@v1.0.0
         with:
           tag: "abc_v1.6.3"
           repo_name: "me/repo"
