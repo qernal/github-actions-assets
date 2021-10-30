@@ -26,7 +26,7 @@ jobs:
 
 | Parameter | Description | Default | Required | Values |
 | ---- | ---- | ---- | ---- | ---- |
-| `tag` | Tag to use, can be initial tag if `tag_pattern` is set | _no default_ | Y | String |
+| `tag` | Release tag to retrieve | _no default_ | Y | String |
 | `repo_name` | Name of the repository to create release on | _no default_ | Y | String |
 | `extract` | Automatically extract archives on download | false | N | Boolean |
 | `output_dir` | Name of the repository to create release on | _no default_ | Y | String |
