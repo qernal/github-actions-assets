@@ -37,7 +37,7 @@ Example;
 ```yaml
     steps:
       - uses: actions/checkout@v2
-      - uses: qernal/github-actions-rust-release@v1.0.8
+      - uses: qernal/github-actions-rust-assets@v1.0.0
         with:
           tag: "abc_v1.6.3"
           repo_name: "me/repo"
