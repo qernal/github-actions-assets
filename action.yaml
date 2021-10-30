@@ -1,0 +1,27 @@
+name: 'qs-github-assets'
+description: 'GitHub Assets Package; Download private assets during a workflow'
+author: 'Qernal (https://qernal.com/)'
+branding:
+  icon: folder-plus
+  color: purple
+
+inputs:
+  tag:
+    description: Tag to create for this release (usually the version)
+    required: true
+  repo_name:
+    description: Name of the repository to create release on
+    required: true
+  extract:
+    description: Auto extract archives on download
+    required: false
+  output_dir:
+    description: Output directory to store the assets
+    required: true
+  token:
+    description: GitHub PAT Token to access/create release
+    required: true
+
+runs:
+  using: 'docker'
+  image: 'docker://ghcr.io/qernal/gh-actions/assets-x86_64:v1.0.0'
